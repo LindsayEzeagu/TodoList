@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -67,4 +67,96 @@ li button {
 
 li button:hover {
   color: #c9302c;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f0f3bd, #02aab0);
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  width: 68%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+li button {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+li button:hover {
+  color: #bd2130;
+}
+
+/* Add some smooth transition for elements */
+input, button, li {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add a subtle hover effect for list items */
+li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Add some margin for better spacing */
+.container, ul {
+  margin-top: 20px;
 }
